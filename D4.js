@@ -97,6 +97,7 @@ function check3and7(j) {
     }
   }
   console.log(check3and7(14))
+  console.log(check3and7(0))
   console.log(check3and7(6))
   console.log(check3and7(5))
 /* ESERCIZIO 7
