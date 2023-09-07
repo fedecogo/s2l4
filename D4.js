@@ -100,10 +100,21 @@ function check3and7(j) {
   console.log(check3and7(6))
   console.log(check3and7(5))
 /* ESERCIZIO 7
- Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
+ Scrivi una funzione di nome "reverseString", il cui scopo è invertire una 
+ stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+function reverseString(d) {
+    let reversedString = '';
+    for (let i = d.length - 1; i >= 0; i--) {
+      reversedString += d.charAt(i);
+    }
+    return reversedString;
+  }
+  const stringaOriginale = "EPICODE";
+  const stringaInvertita = reverseString(stringaOriginale);
+  console.log("Stringa originale: " + stringaOriginale);
+console.log("Stringa invertita: " + stringaInvertita);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
