@@ -6,7 +6,7 @@ function area(l1, l2) {
     return result;
   }
   
-  console.log("L'area del rettangolo è ", area(6, 3));
+  console.log("L'area del rettangolo è:", area(6, 3));
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -75,8 +75,8 @@ function epify (p){
         return "EPICODE" + p;
     }
 }
-  console.log(epify(" Hello, world!"));
-  console.log(epify("EPICODE JavaScript"));
+  console.log(epify(" Hello, world!));
+  console.log(epify("EPICODE school));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
