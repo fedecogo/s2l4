@@ -27,11 +27,13 @@ console.log(crazySum(3, 5));
 
 
 /* ESERCIZIO 3
- Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
- Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
+ Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un 
+ numero fornito come parametro e 19.
+ Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero
+  fornito sia maggiore di 19.
 */
 function crazyDiff(a) {
-    const differenzaAssoluta = (a - 19); 
+    const differenzaAssoluta = Math.abs(a - 19); 
     
     if (a > 19) {
       return differenzaAssoluta * 3;
@@ -75,16 +77,28 @@ function epify (p){
         return "EPICODE" + p;
     }
 }
-  console.log(epify(" Hello, world!));
-  console.log(epify("EPICODE school));
+  console.log(epify(" Hello, world!"));
+  console.log(epify("EPICODE school"));
 
 /* ESERCIZIO 6
- Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
+ Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. 
+ La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+function check3and7(j) {
+    if (j <= 0) {
+      return false; 
+    }
+    
+    else if (j % 3 === 0 || j % 7 === 0) {
+      return true; 
+    } else {
+      return false; 
+    }
+  }
+  console.log(check3and7(14))
+  console.log(check3and7(6))
+  console.log(check3and7(5))
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
