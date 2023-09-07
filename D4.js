@@ -58,8 +58,9 @@ function boundary (n){
     }
 }
 console.log(boundary(21))
+console.log(boundary(400))
 console.log(boundary(1))
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -67,7 +68,15 @@ console.log(boundary(1))
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify (p){
+    if(p.startsWith("EPICODE"))
+    {return p;}
+    else {
+        return "EPICODE" + p;
+    }
+}
+  console.log(epify(" Hello, world!"));
+  console.log(epify("EPICODE JavaScript"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
