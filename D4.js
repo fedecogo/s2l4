@@ -128,7 +128,13 @@ console.log("Stringa invertita: " + stringaInvertita);
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(inputString) {
+      return inputString.slice(1, -1);
+  }
+  const input = "epicode";
+  const output = cutString(input);
+  console.log(output); 
+  
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
